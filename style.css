@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 1px solid black;
+}
+section div {
+    height: 50px;
+    width: 50px;
+    background-color: antiquewhite;
+}
+section div.line1 :nth-child(even) {
+    background-color: black;
+}
+section div.line2 :nth-child(odd) {
+    background-color: black;
+}
+section div.line3 :nth-child(2n) {
+    background-color: black;
+}
+section div.line4 :nth-child(2n+1) {
+    background-color: black;
+}
+section div.line5 :nth-child(2n) {
+    background-color: black;
+}
+section div.line6 :nth-child(2n+1) {
+    background-color: black;
+}
+section div.line7 :nth-child(2n) {
+    background-color: black;
+}
+section div.line8 :nth-child(2n+1) {
+    background-color: black;
+}
